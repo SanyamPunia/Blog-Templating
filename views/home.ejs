@@ -3,8 +3,9 @@
 <h1>Home</h1>
 <p> <%= homeStartingContent %> </p>
 
-<% postArray.forEach(function(post){ %>
-  <% console.log(post.postTitle); %>
+<% postArray.forEach(function(postObject){ %>
+  <h1><%= postObject.postTitle %></h1>
+  <p><%= postObject.postInput %></p>
 <% }) %>
 
 <%- include("partials/footer"); -%>
