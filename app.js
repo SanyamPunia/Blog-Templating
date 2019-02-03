@@ -45,7 +45,18 @@ app.post("/compose", function(req, res){
   postArray.push(postObject);
   res.redirect("/");
 });
+app.get("/post/:topic", function(req, res){
+  let topicParam = req.params.topic;
 
+  postArray.forEach(function(potty){
+    let requestedTitle = potty.postTitle;
+    if(topicParam === requestedTitle){
+      console.log("Match Found!");
+    } else{
+      console.log("No Match Found!");
+    }
+  });
+});
 
 
 
