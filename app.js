@@ -3,6 +3,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const ejs = require("ejs");
+const _ = require("lodash");
 
 const postArray = [];
 
@@ -46,11 +47,10 @@ app.post("/compose", function(req, res){
   res.redirect("/");
 });
 app.get("/post/:topic", function(req, res){
-  let topicParam = req.params.topic;
-
-  postArray.forEach(function(potty){
-    let requestedTitle = potty.postTitle;
-    if(topicParam === requestedTitle){
+  let lowerCaseTopicParam = _.lowerCase(req.params.topic);
+  postArray.forEach(function(postObject){
+    let lowerCaseRequestedTitle = _.lowerCase(postObject.postTitle);
+    if(lowerCaseParam === lowerCaseTitle){
       console.log("Match Found!");
     } else{
       console.log("No Match Found!");
