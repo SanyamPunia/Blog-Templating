@@ -49,18 +49,13 @@ app.post("/compose", function(req, res){
 app.get("/post/:topic", function(req, res){
   let lowerCaseTopicParam = _.lowerCase(req.params.topic);
   postArray.forEach(function(postObject){
-    let lowerCaseRequestedTitle = _.lowerCase(postObject.postTitle);
-    if(lowerCaseParam === lowerCaseTitle){
-      console.log("Match Found!");
-    } else{
-      console.log("No Match Found!");
-    }
+  let lowerCaseRequestedTitle = _.lowerCase(postObject.postTitle);
+  let postContent = {
+    postTitle: postObject.postTitle,
+    postInput: postObject.postInput
+  };
   });
 });
-
-
-
-
 
 app.listen(3000, function() {
   console.log("Server started on port 3000");
