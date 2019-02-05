@@ -13,3 +13,6 @@ Create and compose Blog Post and Display them on their seperate Web Page using T
 
 ## Preview
 ![Blog Preview](https://user-images.githubusercontent.com/35108041/52285679-ce036500-298c-11e9-831b-fe102d2bc7c2.PNG)
+
+## Conclusion
+This project is completely free to use as it is just a basic implementation and usage of tenplating. Feel free to contribute and update this project. As said above, using 'request' package it would be a similar project. So keep this point while contributing in mind and do share your version if you make :)
