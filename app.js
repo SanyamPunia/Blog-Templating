@@ -50,10 +50,12 @@ app.get("/post/:topic", function(req, res){
   let lowerCaseTopicParam = _.lowerCase(req.params.topic);
   postArray.forEach(function(postObject){
     let lowerCaseRequestedTitle = _.lowerCase(postObject.postTitle);
-    if(lowerCaseParam === lowerCaseRequestedTitle){
+    if(lowerCaseTopicParam === lowerCaseRequestedTitle){
       console.log("Match Found!");
-    } else{
-      console.log("No Match Found!");
+      res.render("post", {
+        postTitle: postObject.postTitle,
+        postInput: postObject.postInput
+      });
     }
   });
 });
