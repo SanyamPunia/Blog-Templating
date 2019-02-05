@@ -49,7 +49,6 @@ app.post("/compose", function(req, res){
 app.get("/post/:topic", function(req, res){
   let lowerCaseTopicParam = _.lowerCase(req.params.topic);
   postArray.forEach(function(postObject){
-<<<<<<< HEAD
     let lowerCaseRequestedTitle = _.lowerCase(postObject.postTitle);
     if(lowerCaseTopicParam === lowerCaseRequestedTitle){
       console.log("Match Found!");
@@ -58,13 +57,6 @@ app.get("/post/:topic", function(req, res){
         postInput: postObject.postInput
       });
     }
-=======
-  let lowerCaseRequestedTitle = _.lowerCase(postObject.postTitle);
-  let postContent = {
-    postTitle: postObject.postTitle,
-    postInput: postObject.postInput
-  };
->>>>>>> 15b4e6ac80b4e7c144277218de4bafb4936eb60a
   });
 });
 
