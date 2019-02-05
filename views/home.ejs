@@ -5,7 +5,7 @@
 
 <% postArray.forEach(function(postObject){ %>
   <h1><%= postObject.postTitle %></h1>
-  <p><%= postObject.postInput %></p>
+  <p><%= postObject.postInput.slice(0, 100) + "..." %><a href="/post/<%=postObject.postTitle%>">Read More</a></p>
 <% }) %>
 
 <%- include("partials/footer"); -%>
