@@ -12,4 +12,4 @@ Create and compose Blog Post and Display them on their seperate Web Page using T
 4) Install `nodemon` to keep your server keep restarting after changes made to the `app.js` file automatically.
 
 ## Preview
-[Blog Preview](https://user-images.githubusercontent.com/35108041/52285679-ce036500-298c-11e9-831b-fe102d2bc7c2.PNG)
+![Blog Preview](https://user-images.githubusercontent.com/35108041/52285679-ce036500-298c-11e9-831b-fe102d2bc7c2.PNG)
