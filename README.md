@@ -2,7 +2,7 @@
 Create and compose Blog Post and Display them on their seperate Web Page using Temlating and Layout in EJS.
 
 ## Getting Started
-1) Use `npm install` only if you don't want to include the `node_modules` in your project file using this repo.
+1) Use `npm install`to install all the dependencies.
 2) If you want to take some ideas, just make sure to install the following:
     - Express (`npm install express`)
     - Body Parser (`npm install body-parser`)
